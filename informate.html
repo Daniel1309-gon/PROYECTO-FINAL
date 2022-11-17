@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food-OFF: Informate</title>
+    <link rel="stylesheet" href="gallery-grid.css" />
 
     <style>
       .bd-placeholder-img {
@@ -24,10 +25,11 @@
 
       .b-example-divider {
         height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
         border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
       }
 
       .b-example-vr {
@@ -37,7 +39,7 @@
       }
 
       .bi {
-        vertical-align: -.125em;
+        vertical-align: -0.125em;
         fill: currentColor;
       }
 
@@ -58,29 +60,182 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+      .noticia-1 {
+        text-align: center;
+      }
     </style>
-    <link href="headers.css" rel="stylesheet">
+    <link href="headers.css" rel="stylesheet" />
   </head>
   <body>
     <header class="p-3 text-bg-dark">
       <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">FOOD-OFF
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+            >FOOD-OFF
+            <svg
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap" />
+            </svg>
           </a>
-  
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="nav-link px-2 text-white">INICIO</a></li>
-            <li><a href="informate.html" class="nav-link px-2 text-secondary">INFORMATE</a></li>
-            <li><a href="contactanos.html" class="nav-link px-2 text-white">CONTÁCTANOS</a></li>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="index.html" class="nav-link px-2 text-white">INICIO</a>
+            </li>
+            <li>
+              <a href="informate.html" class="nav-link px-2 text-secondary"
+                >INFORMATE</a
+              >
+            </li>
+            <li>
+              <a href="contactanos.html" class="nav-link px-2 text-white"
+                >CONTÁCTANOS</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci debitis officiis, nihil placeat exercitationem ex itaque dolor error amet, illum explicabo eveniet ad eligendi ipsa ipsam excepturi tempore est rem?</p>
-    
-    
+    <div class="container gallery-container">
+
+      <h1>Aquí encontrarás algunas de las noticias relacionadas a la problemática del proyecto.</h1>
+  
+      <div class="tz-gallery">
+        <div class="row">
+          <div class="noticia-1">
+            <h4>
+              Bogotá desperdicia 52% de alimentos provenientes <br />de residuos,
+              según estudios
+            </h4>
+            <a
+            href="https://www.larepublica.co/responsabilidad-social/bogota-desperdicia-52-de-alimentos-provenientes-de-residuos-segun-estudios-3319085"
+          >
+            <img
+              src="https://img.lalr.co/cms/2022/03/10121619/RSE_cuanto-se-desperdicia-web.jpg?size=md"
+              alt="grafica"
+              width="580"
+              height="400"
+            />
+          </a>
+            <p>
+              Solo la capital desperdicia 1,3 millones de toneladas de comida al
+              año, lo que resulta 37,5% del alimento desperdiciado en Colombia.<br />
+              <i
+                >Continua leyendo en
+                <a
+                  href="https://www.larepublica.co/responsabilidad-social/bogota-desperdicia-52-de-alimentos-provenientes-de-residuos-segun-estudios-3319085"
+                  >La República</a
+                ></i
+              >
+            </p>
+          </div>
+          <div class="noticia-2 col-sm-6 col-md-4">
+            <h4>
+              La crisis global de desperdicio de alimentos es mayor de lo pensado
+              según informe
+            </h4>
+            <a
+              href="https://www.larepublica.co/globoeconomia/la-crisis-global-de-desperdicio-de-alimentos-es-mayor-de-lo-pensado-segun-informe-3204712"
+            >
+              <img
+                src="https://img.lalr.co/cms/2021/07/21115224/food-3.jpg?size=md"
+                alt="plato desperdiciado"
+                width="200"
+                height="180"
+                align="right"
+              />
+            </a>
+            <p>
+              Más de 2.000 millones de toneladas de alimentos no son consumidos en
+              todo el mundo, casi el doble de lo que se pensaba.<br />
+              <i
+                >Continua leyendo en
+                <a
+                  href="https://www.larepublica.co/globoeconomia/la-crisis-global-de-desperdicio-de-alimentos-es-mayor-de-lo-pensado-segun-informe-3204712"
+                  >La República</a
+                ></i
+              >
+            </p>
+          </div>
+          <div class="noticia-3 col-sm-6 col-md-4">
+            <h4>
+              Casi 10 millones de toneladas de alimentos se desperdician al año en
+              Colombia, ¿qué papel cumple el turismo?
+            </h4>
+            <a
+              href="https://www.eltiempo.com/economia/sectores/descomunal-desperdicio-de-alimentos-en-colombia-pais-con-27-de-gente-en-la-pobreza-422048"
+              ><img
+                src="https://www.eltiempo.com/files/article_main/uploads/2019/10/10/5d9fbebfc3f80.jpeg"
+                alt="desperdicio"
+                width="200  "
+                height="150"
+                align="right"
+              />
+            </a>
+            <p>
+              Los Objetivos de Desarrollo Sostenible proponen metas claras: reducir
+              a cero el hambre en el mundo y garantizar modalidades de consumo y
+              producción sostenibles para el 2030, pero cumplirlas está muy lejos de
+              la realidad.
+              <br />
+              <i
+                >Continua leyendo en :
+                <a
+                  href="https://blogs.eltiempo.com/vocesdelaacademiapoli/2022/11/16/casi-10-millones-de-toneladas-de-alimentos-se-desperdician-al-ano-en-colombia-que-papel-cumple-el-turismo/"
+                  >El Tiempo</a
+                ></i
+              >
+            </p>
+          </div>
+          <div class="noticia-4 col-sm-6 col-md-4">
+            <h4>Causas y efectos de la apreciación del dólar</h4>
+            <a
+              href="https://www.larepublica.co/especiales/crisis-en-las-monedas/causas-y-efectos-de-la-apreciacion-del-dolar-3473603"
+            >
+              <img
+                src="https://img.lalr.co/cms/2022/10/20184508/WhatsApp-Image-2022-10-20-at-6.37.52-PM.jpg?size=md"
+                alt="dolar en mano"
+                width="200"
+                height="200"
+                align="right"
+              />
+            </a>
+            <p>
+              Desde mediados del año pasado, la apreciación del dólar es uno de los
+              fenómenos más destacados de la economía mundial. El DXY, indicador que
+              mide el valor del dólar frente a las principales divisas del mundo,
+              alcanzó niveles muy bajos durante la pandemia, 89 en mayo de 2021,
+              pero empezó a rebotar rápidamente, en un ascenso ininterrumpido que lo
+              llevó a alcanzar un valor de 114,1 a finales de septiembre pasado: su
+              valor más alto en 20 años.
+              <br />
+              <i
+                >Continua leyendo en
+                <a
+                  href="https://www.larepublica.co/especiales/crisis-en-las-monedas/causas-y-efectos-de-la-apreciacion-del-dolar-3473603"
+                >
+                  La República
+                </a>
+              </i>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
     
   </body>
 </html>

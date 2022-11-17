@@ -6,6 +6,7 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food-OFF: Inicio</title>
+    <link rel="stylesheet" href="gallery-grid.css">
 
     <style>
       .bd-placeholder-img {
@@ -59,6 +60,7 @@
         -webkit-overflow-scrolling: touch;
       }
     </style>
+    
     <link href="headers.css" rel="stylesheet">
   </head>
   <body>
@@ -78,8 +80,101 @@
       </div>
     </header>
 
+    <div class="container gallery-container">
+
+      <h1>Bienvenido a FOOD-OFF</h1>
+  
+      <p class="page-description text-center">Consulta el producto o tienda de tu interés</p>
+      
+      <div class="tz-gallery">
+  
+          <div class="row">
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox">
+                      <img src="https://lh3.googleusercontent.com/p/AF1QipMllmxkhzFeFdLiz-UXuTu2Zc9tDoLUKLQho5Ah=s1360-w1360-h1020" alt="mercaexito">
+                  </a>
+                  <label for="col-sm-6 col-md-4">Mercaexito</label>
+                  <p>Cra. 7 #8116, Sibaté, Cundinamarca
+                    <br>
+                    Telefono: 3106638512
+                  </p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox">
+                      <img src="https://lh3.googleusercontent.com/p/AF1QipM2HhdibSpQlYaSiTNvVWZN3PVpgWXwqm-akJez=s1360-w1360-h1020" alt="el ancla">
+                  </a>
+                  <label for="col-sm-6 col-md-4">Supermercado El Ancla</label>
+                  <p>Cra. 8 #10-12, Sibaté, Cundinamarca
+                    <br>
+                    Teléfono: no registra</p>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                  <a class="lightbox">
+                      <img src="https://lh3.googleusercontent.com/p/AF1QipNNGTA5XiUnBqnZ-g7ofZqQ0IPqC43VyXlObu7V=s1360-w1360-h1020" alt="donde fino">
+                  </a>
+                  <label for="">Supermercado Donde Fino</label>
+                  <p>
+                    Cra. 9 #1055, Sibaté, Cundinamarca
+                    <br>
+                    Teléfono: 7251367
+                  </p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox">
+                      <img src="https://lh3.googleusercontent.com/p/AF1QipOOshbe6Sw0pRlsz-l_EGkmFPMDAgZQPpYW0BQL=s1360-w1360-h1020" alt="autoservicio merkatodo">
+                  </a>
+                  <label for="">
+                    Autoservicio Merkatodo
+                  </label>
+                  <p>
+                    Cra. 7 #7-95, Sibaté, Cundinamarca
+                    <br>
+                    Teléfono: 3229072114
+                  </p>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox">
+                      <img src="https://lh3.googleusercontent.com/p/AF1QipMDXFQKrbP8Bc9FJZIZTwSi-7C0p80OuSLp2IaX=s1360-w1360-h1020" alt="ara">
+                  </a>
+                  <label for="">Tiendas ARA</label>
+                  <p>
+                    Cra. 7 #8-02, Sibaté, Cundinamarca
+                    <br>
+                    Teléfono: 01-800-0521888
+                  </p>
+              </div>
+          </div>
+  
+      </div>
+  
+  </div>
+
+
+
     
-    
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDcP1zEEfZkLuf_lUxwFb4cwO3RVKN8y2w",
+    authDomain: "food-off.firebaseapp.com",
+    projectId: "food-off",
+    storageBucket: "food-off.appspot.com",
+    messagingSenderId: "97070835632",
+    appId: "1:97070835632:web:34bedcf1a538e327971875",
+    measurementId: "G-FC7WP015C2"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>  
     
   </body>
 </html>
